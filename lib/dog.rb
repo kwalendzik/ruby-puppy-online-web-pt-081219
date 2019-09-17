@@ -4,21 +4,22 @@ class Dog
   
  def initialize(name)
    @name = name
+   save
  end
  
-  def self.save
+  def save
     @@all << self
   end
   
-  def self.all
+  def all
     @@all
   end
   
-  def self.print_all
+  def print_all
     @@all.each { |name| puts name}
   end
   
-  def self.clear_all
+  def clear_all
     @@all.clear
   end
   
